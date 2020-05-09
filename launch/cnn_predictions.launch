@@ -1,0 +1,8 @@
+<launch>
+
+<include file = "$(find neural_networks)/launch/cnn_picture.launch"/>
+
+  <node pkg="neural_networks" type="cnn_predictions.py" name="cnn_predictions" output="screen">
+    <param name="directory" value="$(find neural_networks)/"/>
+  </node>
+</launch>

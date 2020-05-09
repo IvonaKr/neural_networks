@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="neural_networks" type="picture_publisher.py" name="picture_publisher" output="screen">
+    <param name="directory" value="$(find neural_networks)/"/>
+  </node>
+</launch>
